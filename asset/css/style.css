@@ -75,9 +75,7 @@ article{
     transform: scale(1.1);
     cursor: pointer;
 }
-#parent{
-    height: 1200vh;
-}
+
 /* ***************************************Passion en bas************************************************ */
 .passion{
     display: flex;
