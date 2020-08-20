@@ -1,0 +1,540 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.deco{
+    width: 100%;
+    height: 20px;
+    background-color: orangered;
+}
+
+/* ***************************************slider en bas et menu en haut*************************************** */
+.slider{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.image-slide{
+    width: 100%;
+    height: 100%;
+    animation: glisse 10s infinite;
+    
+    
+}
+@keyframes glisse {
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    99%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+/* ********************************************************Menu & Header*************************************************** */
+/* ********************************************************a propos     *************************************************** */
+article{
+    width: 100%;
+    margin-top: 15%;
+    height: 100vh;
+
+}
+.titre1{
+    text-align: center;
+    color: orangered;
+    font-size: 2em;
+    margin-left: 5%;
+
+}
+.para1{
+    text-align: justify;
+    padding: 5%;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    font-size: 1.4em;
+}
+.profil-image{
+    height: 500px;
+    border-radius: 15px;
+    margin-right: 5em;
+    cursor: pointer;
+    float: left;
+    transition: 0.5s ease;
+}
+.profil-image:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#parent{
+    height: 1200vh;
+}
+/* ***************************************Passion en bas************************************************ */
+.passion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8em;
+    margin-bottom: 30vh;
+}
+.contenaire {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenu:hover{
+    background: #444;
+    opacity: 0.9;
+    color: crimson;
+    height: 100%;
+    padding: 8%;
+}
+.contenaire .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(../img/pg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 15px 60px rgba(0, 0, 0.5);
+    cursor: pointer;
+}
+.contenaire .card .face.face1 {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.contenaire .card .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenaire .card:first-child .face.face2 {
+    background: linear-gradient(45deg, #3503ad, #f7308c);
+    transition: 2s;
+}
+
+.contenaire .card .face.face2 {
+    background: #111;
+    transition: 0.5s;
+}
+.contenaire .card .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenaire .card:hover .face.face2 {
+    height: 60px;
+}
+.contenaire #card2 {
+    background-image: url(../img/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenaire #card3 {
+    background-image: url(../img/brain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titre-card{
+    font-size: 2.8em;
+    color: white;
+    font-weight: 600;
+}
+#para1 {
+    color: whitesmoke;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Trade Winds', sans-serif;
+}
+
+
+
+#para2 {
+    color: whitesmoke;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Trade Winds', sans-serif;
+}
+
+
+
+#para3 {
+    color: whitesmoke;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Trade Winds', sans-serif;
+}
+
+
+.titire-passion{
+    font-size: 1.8em;
+    color: rgb(230, 39, 144);
+
+}
+
+
+
+/* ******************************competence en bas************************************************************ */
+.Competence{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+}
+.formation-read{
+    width: 70%;
+}
+.border {
+    width: 100px;
+    height: 3px;
+    background: #e74c3c;
+    margin: 40px auto;
+}
+
+#comp {
+    text-align: center;
+    color: #e74c3c;
+    font-family: 'Anton', ;
+}
+
+
+
+#cv {
+    display: inline-block;
+    color: #e74c3c;
+    text-decoration: none;
+    border: 2px solid #e74c3c;
+    border-radius: 24px;
+    padding: 8px 40px;
+    transition: 0.8s linear;
+    margin: 5% 0 0 42%;
+}
+
+#cv:hover {
+    color: #fffc;
+    background: #e74c3c;
+    transform: translatey(-10px);
+}
+
+
+.bar {
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: coral;
+}
+
+.bar:before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #c0c0c0;
+    border-radius: 100px;
+}
+
+.bar:after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #e74c3c;
+    border-radius: 100px;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+.bar#html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 65%;
+    }
+}
+
+.bar#css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 45%;
+    }
+}
+
+.bar#js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 5%;
+    }
+}
+
+.bar#mkt:after {
+    animation-name: mkt;
+}
+
+@keyframes mkt {
+    to {
+        width: 80%;
+    }
+       
+}
+.bar#base-donne:after {
+    animation-name: base-donne;
+}
+
+@keyframes base-donne {
+    to {
+        width: 0%;
+    }
+}
+.bar#perso-cms:after {
+    animation-name: perso-cms;
+}
+
+@keyframes perso-cms {
+    to {
+        width: 0%;
+    }
+}
+.bar#back-off:after {
+    animation-name: back-off;
+}
+
+@keyframes back-off {
+    to {
+        width: 5%;
+    }
+}
+.bar#pro-serveur:after {
+    animation-name: pro-serveur;
+}
+
+@keyframes pro-serveur {
+    to {
+        width: 0%;
+    }
+}
+.bar-progression:hover .bar {
+    opacity: 20%;
+}
+
+.bar-progression .bar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+/***************************************** Parcours en bas **********************************************/
+.bodyline{
+    min-height: 100vh;
+    /* background: #001; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+h2{
+     color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+.timeline{
+    width: 85%;
+    position: relative;
+}
+.content{
+    background: #444;
+    margin: 20px 0;
+    padding: 20px;
+    position: relative;
+    color: white;
+    border-radius: 5px;
+}
+.content h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content p{
+    line-height: 1.4;
+    margin: 10px 0;
+}
+.content a{
+    text-decoration: none;
+    background: white;
+    padding: 10px 25px;
+    color: black;
+}
+.content a:hover{
+    background: crimson;
+    color: white;
+}
+.content .time{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+}
+@media (min-width: 700px){
+    .content{
+        width: 50%;
+    }
+    .content:nth-child(odd){
+        float: left;
+        clear: both;
+        transform: translateX(-67px);
+
+    }
+    .content:nth-child(even){
+        float: right;
+        clear: both;
+        transform: translateX(65px);
+
+    }
+    .timeline::before{
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .content::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: grey;
+        position: absolute;
+        top: 50%;
+        right: -35px;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    .content:nth-child(even)::before{
+        left: -33px;
+    }
+    .content:hover::before{
+        background: crimson;
+    }
+    .content::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: #444;
+        position: absolute;
+        top: 50%;
+        right: -8px;
+        transform: translateY(-50%) rotate(45deg);
+
+
+    }
+    .content:nth-child(even)::after{
+        left: -8px;
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/***********************************************footer en bas  *****************************************/
+footer {
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(249, 167, 142, 1), rgba(218, 103, 238, 1), rgba(130, 125, 253, 1));
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer {
+    margin: auto;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer #tweet:hover {
+    transition: 1s;
+    color: #70a1ff;
+    opacity: 90%;
+}
+
+.footer #github:hover {
+    transition: 1s;
+    color: #57606f;
+    opacity: 90%;
+}
+
+.footer #gmail:hover {
+    transition: 1s;
+    color: #EA2027;
+    opacity: 90%;
+}
+
+.footer #likedin:hover {
+    transition: 1s;
+    color: #0652DD;
+    opacity: 90%;
+}
+
+.footer #fbk:hover {
+    transition: 1s;
+    color: #5352ed;
+    opacity: 90%;
+}
+
+.icone:hover {
+    transform: translatey(-10px);
+    transition: 1.5s;
+}
+
+
